@@ -5,8 +5,6 @@ export default function ResumeButton() {
     <motion.a
       href='/keerthana-resume.pdf'
       download='Keerthana_M_Resume.pdf'
-      target='_blank'
-      rel='noopener noreferrer'
       className='resume-fab'
       title='Download Resume PDF'
       initial={{ opacity: 0, scale: 0 }}
