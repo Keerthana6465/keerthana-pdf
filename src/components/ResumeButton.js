@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export default function ResumeButton() {
+const PDF_URL = 'https://keerthana-pdf.vercel.app/keerthana-resume.pdf';
+const VIEWER_URL = `https://docs.google.com/viewer?url=${encodeURIComponent(PDF_URL)}&embedded=true`;
+
+
   const [open, setOpen] = useState(false);
 
   return (
@@ -53,7 +56,7 @@ export default function ResumeButton() {
                 </div>
               </div>
               <iframe
-                src='/keerthana-resume.pdf#toolbar=0'
+                src={VIEWER_URL}
                 title='Keerthana Resume'
                 className='resume-modal-iframe'
               />
