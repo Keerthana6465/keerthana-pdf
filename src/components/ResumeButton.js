@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const PDF_URL = 'https://keerthana-pdf.vercel.app/keerthana-resume.pdf';
-const VIEWER_URL = `https://docs.google.com/viewer?url=${encodeURIComponent(PDF_URL)}&embedded=true`;
+const LOCAL_PDF = '/keer%20M%20resume.pdf';
 
-
+export default function ResumeButton() {
   const [open, setOpen] = useState(false);
 
   return (
@@ -43,20 +42,27 @@ const VIEWER_URL = `https://docs.google.com/viewer?url=${encodeURIComponent(PDF_
               onClick={(e) => e.stopPropagation()}
             >
               <div className='resume-modal-header'>
-                <span className='resume-modal-title'>📄 Keerthana M — Resume</span>
+                <span className='resume-modal-title'>
+                  📄 Keerthana M — Resume
+                </span>
                 <div className='resume-modal-actions'>
                   <a
-                    href='/keerthana-resume.pdf'
+                    href='/keer%20M%20resume.pdf'
                     download='Keerthana_M_Resume.pdf'
                     className='resume-modal-download'
                   >
                     ⬇ Download
                   </a>
-                  <button className='resume-modal-close' onClick={() => setOpen(false)}>✕</button>
+                  <button
+                    className='resume-modal-close'
+                    onClick={() => setOpen(false)}
+                  >
+                    ✕
+                  </button>
                 </div>
               </div>
               <iframe
-                src={VIEWER_URL}
+                src={LOCAL_PDF}
                 title='Keerthana Resume'
                 className='resume-modal-iframe'
               />
@@ -67,4 +73,3 @@ const VIEWER_URL = `https://docs.google.com/viewer?url=${encodeURIComponent(PDF_
     </>
   );
 }
-

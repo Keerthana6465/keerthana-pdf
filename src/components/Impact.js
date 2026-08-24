@@ -1,10 +1,25 @@
 import { motion } from 'framer-motion';
 
 const stats = [
-  { value: '1+',  label: 'Year Experience', icon: '\uD83D\uDCC5', color: '#00bfff' },
-  { value: '6',   label: 'Projects Built',  icon: '\uD83D\uDE80', color: '#7c3aed' },
-  { value: '97%', label: 'ML Accuracy',     icon: '\uD83C\uDFAF', color: '#f97316' },
-  { value: '2',   label: 'Companies',       icon: '\uD83C\uDFE2', color: '#10b981' },
+  {
+    value: '1+',
+    label: 'Year Experience',
+    icon: '\uD83D\uDCC5',
+    color: '#00bfff'
+  },
+  {
+    value: '6',
+    label: 'Projects Built',
+    icon: '\uD83D\uDE80',
+    color: '#7c3aed'
+  },
+  {
+    value: '97%',
+    label: 'ML Accuracy',
+    icon: '\uD83C\uDFAF',
+    color: '#f97316'
+  },
+  { value: '2', label: 'Companies', icon: '\uD83C\uDFE2', color: '#10b981' }
 ];
 
 const achievements = [
@@ -12,7 +27,7 @@ const achievements = [
   'Improved AWS billing reporting accuracy and resolved consumption discrepancies across IN and EU.',
   'Delivered scalable n8n + GitLab compliance workflows with dynamic conflict handling and auto-merge.',
   'Automated Excel-based data processing pipelines, eliminating repetitive operational tasks.',
-  'Supported multi-region FinOps operations including API validation and cloud cost tracking.',
+  'Supported multi-region FinOps operations including API validation and cloud cost tracking.'
 ];
 
 export default function Impact() {
@@ -41,7 +56,9 @@ export default function Impact() {
               style={{ borderTop: `3px solid ${stat.color}` }}
             >
               <span className='stat-icon'>{stat.icon}</span>
-              <span className='stat-value' style={{ color: stat.color }}>{stat.value}</span>
+              <span className='stat-value' style={{ color: stat.color }}>
+                {stat.value}
+              </span>
               <span className='stat-label'>{stat.label}</span>
             </motion.div>
           ))}

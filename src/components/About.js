@@ -4,15 +4,17 @@ const strengths = [
   'Backend / API Engineering',
   'Workflow Automation',
   'Test Automation',
-  'Cloud / FinOps',
   'Problem Solving',
-  'Cross-functional Collaboration',
+  'Cross-functional Collaboration'
 ];
 
 const contact = [
-  { label: '\uD83D\uDCE7 Email',     href: 'mailto:keerthanam19092003@gmail.com' },
-  { label: '\uD83D\uDD17 LinkedIn',  href: 'https://linkedin.com/in/keerthana-m-2b335933a' },
-  { label: '\uD83D\uDCDE +91 7349449878', href: 'tel:+917349449878' },
+  { label: '\uD83D\uDCE7 Email', href: 'mailto:keerthanam19092003@gmail.com' },
+  {
+    label: '\uD83D\uDD17 LinkedIn',
+    href: 'https://linkedin.com/in/keerthana-m-2b335933a'
+  },
+  { label: '\uD83D\uDCDE +91 7349449878', href: 'tel:+917349449878' }
 ];
 
 export default function About() {
@@ -36,18 +38,29 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <p>
-              Software Engineer with <strong>1+ year of industry experience</strong> across backend
-              engineering, workflow automation, test automation, cloud cost operations, and API-driven
-              platforms. Experienced in Python, Java/Spring Boot, REST APIs, SQL, AWS, GitLab, Jira,
-              n8n, and Playwright. Built reusable automation frameworks, GitLab back-merge compliance
-              workflows, product-onboarding automation, and cloud billing/consumption processes.
-              Strong in <strong>translating manual operational processes into scalable, auditable
-              automation</strong>.
+              Software Engineer with{' '}
+              <strong>1+ year of industry experience</strong> across backend
+              engineering, workflow automation, test automation, cloud cost
+              operations, and API-driven platforms. Experienced in Python, REST
+              APIs, SQL, AWS, GitLab, Jira, n8n, and Playwright. Built reusable
+              automation frameworks, GitLab back-merge compliance workflows,
+              product-onboarding automation, and cloud billing/consumption
+              processes. Strong in{' '}
+              <strong>
+                translating manual operational processes into scalable,
+                auditable automation
+              </strong>
+              .
             </p>
             <div className='contact-row'>
-              {contact.map(c => (
-                <a key={c.href} href={c.href} className='hero-link'
-                  target='_blank' rel='noopener noreferrer'>
+              {contact.map((c) => (
+                <a
+                  key={c.href}
+                  href={c.href}
+                  className='hero-link'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   {c.label}
                 </a>
               ))}
@@ -63,7 +76,11 @@ export default function About() {
           >
             <h3 className='card-sub-title'>Engineering Strengths</h3>
             <div className='pills-wrap'>
-              {strengths.map(s => <span key={s} className='pill'>{s}</span>)}
+              {strengths.map((s) => (
+                <span key={s} className='pill'>
+                  {s}
+                </span>
+              ))}
             </div>
           </motion.div>
         </div>

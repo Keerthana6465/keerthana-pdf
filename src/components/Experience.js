@@ -10,10 +10,10 @@ const jobs = [
       'Built scalable <strong>n8n + GitLab automation</strong> for merge tracking and hotfix back-merge compliance, including dynamic branch/project handling, MR creation, status monitoring, auto-merge, and conflict alerts.',
       'Developed a reusable <strong>Playwright automation framework</strong> for product onboarding and regression testing using Page Object Model, CSV-driven data, reusable functions, and automated reports.',
       'Automated <strong>backend/API validation and product onboarding</strong> workflows for the USP marketplace with structured customer and product data handling.',
-      'Supported <strong>AWS consumption posting and FinOps operations</strong> across IN and EU, including API validation, billing reports, account analysis, and cloud cost tracking.',
+      'Supported <strong>AWS consumption posting operations</strong> across IN and EU, including API validation, billing reports, account analysis, and cloud cost tracking.',
       'Worked on <strong>AWS billing and invoice reconciliation</strong>, improving reporting accuracy and resolving consumption discrepancies with stakeholders.',
-      'Automated <strong>Excel-based data processing and reporting</strong> using Python/Pandas, reducing repetitive manual effort and improving validation consistency.',
-    ],
+      'Automated <strong>Excel-based data processing and reporting</strong> using Python/Pandas, reducing repetitive manual effort and improving validation consistency.'
+    ]
   },
   {
     company: 'Larsen & Toubro',
@@ -22,9 +22,9 @@ const jobs = [
     color: '#f97316',
     bullets: [
       'Engineered an AFDX emulator in Debian Linux using Python socket programming and supported network communication testing.',
-      'Automated network communication test scenarios and prepared technical documentation for the engineering workflow.',
-    ],
-  },
+      'Automated network communication test scenarios and prepared technical documentation for the engineering workflow.'
+    ]
+  }
 ];
 
 export default function Experience() {
@@ -49,11 +49,19 @@ export default function Experience() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.2, duration: 0.6 }}
             >
-              <div className='timeline-dot' style={{ background: job.color, boxShadow: `0 0 10px ${job.color}` }} />
+              <div
+                className='timeline-dot'
+                style={{
+                  background: job.color,
+                  boxShadow: `0 0 10px ${job.color}`
+                }}
+              />
               <div className='card'>
                 <div className='job-header'>
                   <div>
-                    <h3 className='job-company' style={{ color: job.color }}>{job.company}</h3>
+                    <h3 className='job-company' style={{ color: job.color }}>
+                      {job.company}
+                    </h3>
                     <p className='job-role'>{job.role}</p>
                   </div>
                   <span className='job-period'>{job.period}</span>
