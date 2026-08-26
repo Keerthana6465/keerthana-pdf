@@ -27,7 +27,7 @@ export default function OrbitalNav() {
       {/* Center hero */}
       <div className='hero-center'>
         <div className='hero-photo-wrap'>
-          <img src='/resume.photo.jpeg' alt='Keerthana M' />
+          <img src='/RESUME_PICTURE.JPEG' alt='Keerthana M' />
         </div>
         <h1 className='hero-name'>Keerthana M</h1>
         <p className='hero-role'>Software Engineer</p>
