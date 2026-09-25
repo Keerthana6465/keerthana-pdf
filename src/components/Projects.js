@@ -14,10 +14,17 @@ const projects = [
     color: '#00bfff'
   },
   {
-    title: 'Jira Workflow Automation',
-    desc: 'Automated story validation, subtask processing, workflow transitions, and PI-related updates to reduce repetitive Jira operations and improve process consistency.',
-    tech: ['n8n', 'Jira APIs', 'REST APIs'],
-    color: '#0052cc'
+    title: 'Backoffice Portal - Full-Stack Operations Platform',
+    desc: 'Enhanced an enterprise portal for orders, products, invoices, and companies with Spring Boot REST APIs and responsive React UI. Improved order readability, client-side value calculations, API-driven data views, pagination, and dashboard KPIs.',
+    tech: [
+      'Java 17',
+      'Spring Boot',
+      'REST APIs',
+      'React',
+      'TypeScript',
+      'Maven'
+    ],
+    color: '#7c3aed'
   },
   {
     title: 'Cloud Consumption Automation',
@@ -32,10 +39,10 @@ const projects = [
     color: '#10b981'
   },
   {
-    title: 'Dysphonic Speech Enhancement',
-    desc: 'Neural-network models (ANN/CNN/DNN) for dysphonic speech analysis. Achieved 97% prediction accuracy in project evaluation.',
-    tech: ['Python', 'ANN/CNN/DNN', 'Deep Learning'],
-    color: '#7c3aed'
+    title: 'Jira Workflow Automation',
+    desc: 'Automated story validation, subtask processing, workflow transitions, and PI-related updates to reduce repetitive Jira operations and improve process consistency.',
+    tech: ['n8n', 'Jira APIs', 'REST APIs'],
+    color: '#0052cc'
   }
 ];
 
